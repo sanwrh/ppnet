@@ -20,7 +20,7 @@ Once the PEPNN data runs smoothly, copy all files to the main PepNN folder.
   - `-t`, `--target_folder`: The protein target library folder from the previous step. The default is `target_min/`.
   - `-u`, `--uniprot_mapping_file`: The mapping file between UniProt ID and PDB ID. The default is `UniProt_PDB_lib.xlsx`.
   - `-of`, `--output_file`: The output statistical results file. The default is `analysis_output.csv`.
-  - `-s`, `--significance_threshold`: The default is 0.001.
+  - `-s`, `--significance_threshold`: The default is 0.01.
   - `-w`, `--weighted_value_threshold`: The default is 1.5.
   - `-i`, `--interaction_value_threshold`: The default is 0.5.
 
@@ -37,8 +37,8 @@ Once the PEPNN data runs smoothly, copy all files to the main PepNN folder.
 
 A t-test is conducted on the interaction probabilities of all sites versus the interaction probabilities of active sites. When the conditions are met: 
 
-- Weighted Value \( \geq 1.5 \)
-- Action Interaction Mean \( \geq 0.5 \)
+- Weighted Value \( < 1.5 \)
+- Action Interaction Mean \( < 0.5 \)
 - Significance \( < 0.01 \)
 
 It is determined that the peptide has an interaction with the protein target.
