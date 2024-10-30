@@ -27,3 +27,19 @@ Once the PEPNN data runs smoothly, copy all files to the main PepNN folder.
 ## Key Formulas
 
 ![Formulas](Formulas.png)
+
+## Key Formulas and Their Meanings
+
+- \( N \): Total number of all sites.
+- \( M \): Total number of active sites.
+- \( P_i \): Interaction probability of the \( i \)-th site.
+- \( P_j \): Interaction probability of the \( j \)-th active site.
+
+A t-test is conducted on the interaction probabilities of all sites versus the interaction probabilities of active sites. When the conditions are met: 
+
+- Weighted Value \( \geq 1.5 \)
+- Action Interaction Mean \( \geq 0.5 \)
+- Significance \( < 0.01 \)
+
+It is determined that the peptide has an interaction with the protein target.
+
